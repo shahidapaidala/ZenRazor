@@ -83,7 +83,6 @@ Contact Page
     Title Should Be    Contact - ZenRazor
     Page Should contain    Contact
     Element Should contain    //h3  Team ForCloud Demo Application in Azure
-    Click Link    xpath=//a[@href="mailto:Support@example.com"]
-    Click Link    xpath=//a[@href="mailto:Marketing@example.com"]
+    Page Should contain    firstname.lastname@myy.haaga-helia.fi
     Element Should contain    //footer//p  © 2018 - FourCloud
     [Teardown]    Close Browser
