@@ -1,8 +1,9 @@
 *** Settings ***
 Documentation     A test suite with a single test for valid home page.
-Library           SeleniumLibrary  
+Library           Selenium2Library  
 Library           robot.libraries.DateTime
 Library           OperatingSystem
+Library           XvfbRobot
 
 *** Variables ***
 ${BROWSER}        chrome
@@ -18,6 +19,7 @@ ${date}=  Convert Date date_format=%d/%m/%Y %H:%M
 
 *** Test Cases ***
 Home Page
+    Start Virtual Display    1920    1080
     Open Browser    ${HOME URL}    ${BROWSER}
     Maximize Browser Window
     Set Selenium Speed    ${DELAY}
