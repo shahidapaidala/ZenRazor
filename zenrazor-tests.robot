@@ -21,7 +21,7 @@ ${date}=  Convert Date date_format=%d/%m/%Y %H:%M
 Home Page
     Start Virtual Display    1920    1080
     Open Browser    ${HOME URL}    ${BROWSER}
-    Maximize Browser Window
+    Set Window Size    1920    1080
     Set Selenium Speed    ${DELAY}
     Title Should Be    Home page - ZenRazor
     Page Should contain    Application uses
