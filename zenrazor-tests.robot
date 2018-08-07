@@ -71,7 +71,7 @@ About Page
     Set Selenium Speed    ${DELAY}
     Title Should Be    About - ZenRazor
     Page Should contain    About
-    Element Should contain    //h3  Your application description page.
+    Element Should contain    //h3  This is a simple web application in Azure that is used to as example of cloud web development environment.
     Element Should contain    //footer//p  © 2018 - FourCloud
     [Teardown]    Close Browser
  
@@ -82,7 +82,7 @@ Contact Page
     Set Selenium Speed    ${DELAY}
     Title Should Be    Contact - ZenRazor
     Page Should contain    Contact
-    Element Should contain    //h3  Your contact page.
+    Element Should contain    //h3  Team ForCloud Demo Application in Azure.
     Click Link    xpath=//a[@href="mailto:Support@example.com"]
     Click Link    xpath=//a[@href="mailto:Marketing@example.com"]
     Element Should contain    //footer//p  © 2018 - FourCloud
