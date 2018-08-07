@@ -38,8 +38,9 @@ Home Page
     [Teardown]    Close Browser
 
 Task Page
+    Start Virtual Display    1920    1080
     Open Browser    ${TASKS PAGE URL}    ${BROWSER}
-    Maximize Browser Window
+    Set Window Size    1920    1080
     Set Selenium Speed    ${DELAY}
     Title Should Be    Index - ZenRazor
     Page Should contain    Index
@@ -48,8 +49,9 @@ Task Page
 
 Create Task
     [Tags]  wip
+    Start Virtual Display    1920    1080
     Open Browser    ${TASKS PAGE URL}    ${BROWSER}
-    Maximize Browser Window
+    Set Window Size    1920    1080
     Set Selenium Speed    ${DELAY}
     Title Should Be    Index - ZenRazor
     Click Link    xpath=//a[@href="/ZenTasks/Create"]
@@ -63,8 +65,9 @@ Create Task
     [Teardown]    Close Browser
     
 About Page
+    Start Virtual Display    1920    1080
     Open Browser    ${ABOUT PAGE URL}    ${BROWSER}
-    Maximize Browser Window
+    Set Window Size    1920    1080
     Set Selenium Speed    ${DELAY}
     Title Should Be    About - ZenRazor
     Page Should contain    About
@@ -73,8 +76,9 @@ About Page
     [Teardown]    Close Browser
  
 Contact Page
+    Start Virtual Display    1920    1080
     Open Browser    ${CONTACT PAGE URL}    ${BROWSER}
-    Maximize Browser Window
+    Set Window Size    1920    1080
     Set Selenium Speed    ${DELAY}
     Title Should Be    Contact - ZenRazor
     Page Should contain    Contact
